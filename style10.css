@@ -1,0 +1,383 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* 전체 */
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Pretendard", sans-serif;
+  }
+
+
+   /* 헤더 */
+
+  .site-header {
+    min-height: clamp(420px, 24vw, 650px);
+    display: flex;
+    flex-direction: column;
+    background-color: #198754;
+  }
+  
+  
+
+  /* 내비게이션 */
+
+  .header-navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #198754;
+  }
+  
+  /* 로고 */
+  .header-navbar .navbar-brand {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  /* 메뉴 */
+  .header-navbar .navbar-nav {
+    gap: 3rem;
+  }
+  
+  .header-navbar .nav-link {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  
+  /* 호버 */
+  .header-navbar .navbar-brand:hover,
+  .header-navbar .nav-link:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  /* 데스크탑 헤드 하단 */
+  
+  .hero-about {
+    margin-top: auto;
+    padding-bottom: 3rem;
+  
+    display: grid;
+    grid-template-columns:
+      minmax(0, 2.5fr)
+      minmax(max-content, 0.45fr)
+      minmax(max-content, 0.55fr)
+      minmax(max-content, 0.7fr);
+  
+    align-items: end;
+    column-gap: 3rem;
+  }
+  
+  /* 이름 */
+  .hero-name {
+    grid-column: auto;
+    grid-row: auto;
+  
+    margin: 0;
+    color: #000;
+    font-size: clamp(3rem, 6vw, 8rem);
+    font-weight: 700;
+    line-height: 0.8;
+    letter-spacing: -0.06em;
+  }
+  
+  /* Visual Designer */
+  .hero-subtitle1 {
+    grid-column: auto;
+    grid-row: auto;
+  
+    margin: 0;
+    color: #000;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+  
+  /* Brand Director */
+  .hero-subtitle2 {
+    grid-column: auto;
+    grid-row: auto;
+  
+    margin: 0;
+    color: #000;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+  
+  /* Get in Touch */
+  .hero-contact {
+    grid-column: auto;
+    grid-row: auto;
+    
+    margin: 0;
+    color: #000;
+    font-size: 1.25rem;
+    text-align: right;
+    white-space: nowrap;
+  }
+  
+  .hero-contact:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  
+/* 헤더아래 메인이미지 */
+  
+  .about-image-area {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .about-main-image {
+    display: block;
+    width: 100%;
+    height: clamp(280px, 28vw, 520px);
+    margin: 0;
+  
+    object-fit: cover;
+    object-position: center 60%;
+  
+    border: 0;
+  }
+  
+  
+/* 본문 */
+  
+  .content-section,
+  .contact-section {
+    color: #343a40;
+    font-size: 1.25rem;
+  }
+  
+  /* 섹션 제목 */
+  .section-title {
+    color: #343a40;
+    font-weight: 700;
+  }
+  
+  /* 오른쪽 본문 */
+  .content-block {
+    padding: 1.5rem 0;
+    border-top: 1.5px solid #343a40;
+  }
+  
+
+  /* 본문 제목 */
+  .content-title {
+    margin: 0 0 1.2rem;
+    color: #343a40;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+
+/* 포트폴리오 이미지 */
+  
+  .portfolio-card {
+    overflow: hidden;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+  }
+  
+  .portfolio-card img {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  
+  
+/* 컨택트 */
+  
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .contact-links a {
+    color: #198754;
+  }
+  
+  
+/* 컨택트 폼 */
+  
+  .contact-form {
+    margin-bottom: 0;
+  }
+  
+  .contact-form .form-label {
+    color: #343a40;
+  }
+  
+  .contact-form .form-control {
+    color: #343a40;
+    border-radius: 0;
+  }
+  
+  .contact-form .form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.15);
+  }
+  
+  
+/* 푸터 */
+  
+  .site-footer {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    background-color: #000;
+  }
+  
+  .footer-copyright {
+    margin: 0;
+    color: #fff;
+    font-size: 0.875rem;
+  }
+  
+/* 탑버튼 */
+  
+  .top_btn {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 36px;
+    height: 36px;
+  
+    color: #fff;
+    background-color: #198754;
+    text-decoration: none;
+  
+    border-radius: 50%;
+  }
+  
+  .top_btn:hover {
+    color: #fff;
+    background-color: #146c43;
+  }
+  
+/* 모바일용 구성 001 */
+  
+  @media (max-width: 991.98px) {
+    /* 모바일 헤더 높이 */
+    .site-header {
+      height: auto;
+      min-height: 450px;
+    }
+  
+    /* 모바일 내비게이션 */
+    .header-navbar {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  
+    .header-navbar .navbar-brand {
+      font-size: 2rem;
+    }
+  
+    .header-navbar .navbar-nav {
+      gap: 0;
+      padding-top: 1rem;
+    }
+  
+    .header-navbar .nav-item:last-child .nav-link {
+      padding-right: var(--bs-nav-link-padding-x);
+    }
+  
+    /* 모바일 헤더 하단 */
+    .hero-about {
+      margin-top: auto;
+      padding-bottom: 2rem;
+  
+      grid-template-rows: auto;
+      column-gap: 1rem;
+      row-gap: 0.5rem;
+      align-items: end;
+    }
+  
+    /* 모바일 이름: 왼쪽 */
+    .hero-name {
+      grid-column: 1;
+      grid-row: 1 / 4;
+
+      font-size: clamp(2rem, 8vw, 3rem);
+      line-height: 0.9;
+      overflow-wrap: anywhere;
+    }
+  
+    /* 모바일 오른쪽 첫 번째 줄 */
+    .hero-subtitle1 {
+      grid-column: 2;
+      grid-row: 1;
+  
+      font-size: 0.8rem;
+    }
+  
+    /* 모바일 오른쪽 두 번째 줄 */
+    .hero-subtitle2 {
+      grid-column: 2;
+      grid-row: 2;
+      font-size: 0.8rem;
+    }
+  
+    /* 모바일 오른쪽 세 번째 줄 */
+    .hero-contact {
+      grid-column: 2;
+      grid-row: 3;
+
+      margin-top: 0.7rem;
+      font-size: 0.8rem;
+      text-align: left;
+    }
+  
+    /* 모바일 소개 이미지 */
+    .about-main-image {
+      height: 300px;
+      object-position: center;
+    }
+  
+    /* 모바일 섹션 제목 */
+    .section-title {
+      margin-bottom: 2rem !important;
+      margin-left: 0 !important;
+    }
+  
+    /* 모바일 본문 */
+    .content-block p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  
+    /* 모바일 연락처 */
+    .contact-links {
+      flex-direction: column;
+    }
+  
+    /* 모바일 위로 가기 버튼 */
+    .top_btn {
+      right: 1rem;
+      bottom: 1rem;
+    }
+  }
